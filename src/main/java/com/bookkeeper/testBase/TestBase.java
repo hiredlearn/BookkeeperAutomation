@@ -17,7 +17,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.log4testng.Logger;
 
@@ -53,12 +54,12 @@ public class TestBase {
 		}
 	}
 
-	@BeforeTest
+	@BeforeSuite
 	public void setLog4j() {
 		TestUtility.setDateForLog4j();
 
 		extent = new ExtentReports(
-				System.getProperty("user.dir") + "/AutomationReport/" + TestUtility.getSystemDate() + ".html");
+				System.getProperty("user.dir") + "/AutomationReport/Report_" + TestUtility.getSystemDate() + ".html");
 		extent.addSystemInfo("Host Name", "Windows System");
 		extent.addSystemInfo("User Name", "user");
 		extent.addSystemInfo("Environment", "Automation Test Report");
@@ -69,45 +70,43 @@ public class TestBase {
 		String broswerName = property.getProperty("Browser");
 		System.out.println(broswerName);
 
-		if (driver == null) {
-			if (broswerName.equals("Chrome")) {
-				chromeOptions = new ChromeOptions();
-				chromeOptions.setExperimentalOption("useAutomationExtension", false);
-				chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+		if (broswerName.equals("Chrome")) {
+			chromeOptions = new ChromeOptions();
+			chromeOptions.setExperimentalOption("useAutomationExtension", false);
+			chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 
-				Map<String, Object> prefs = new HashMap<String, Object>();
-				prefs.put("credentials_enable_service", false);
-				prefs.put("profile.password_manager_enabled", false);
-				chromeOptions.setExperimentalOption("prefs", prefs);
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			prefs.put("credentials_enable_service", false);
+			prefs.put("profile.password_manager_enabled", false);
+			chromeOptions.setExperimentalOption("prefs", prefs);
 
-				System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
-				driver = new ChromeDriver(chromeOptions);
-			} else if (broswerName.equals("IE")) {
-				System.setProperty("webdriver.ie.driver", Constants.INTERNET_EXPLORER_DRIVER_PATH);
-				driver = new InternetExplorerDriver();
-			} else if (broswerName.equals("Firefox")) {
-				System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_DRIVER_PATH);
-				driver = new FirefoxDriver();
-			} else {
-				System.out.println("Path of Driver Executable is not Set for any Browser");
-			}
-
-			e_driver = new EventFiringWebDriver(driver);
-
-			eventListener = new WebEventListener();
-			e_driver.register(eventListener);
-			driver = e_driver;
-
-			driver.manage().window().maximize();
-			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-			driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
-
-			driver.get(property.getProperty("Url"));
+			System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
+			driver = new ChromeDriver(chromeOptions);
+		} else if (broswerName.equals("IE")) {
+			System.setProperty("webdriver.ie.driver", Constants.INTERNET_EXPLORER_DRIVER_PATH);
+			driver = new InternetExplorerDriver();
+		} else if (broswerName.equals("Firefox")) {
+			System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_DRIVER_PATH);
+			driver = new FirefoxDriver();
+		} else {
+			System.out.println("Path of Driver Executable is not Set for any Browser");
 		}
+
+		e_driver = new EventFiringWebDriver(driver);
+
+		eventListener = new WebEventListener();
+		e_driver.register(eventListener);
+		driver = e_driver;
+
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
+
+		driver.get(property.getProperty("Url"));
 	}
 
-	@AfterTest
+	@AfterSuite
 	public void endReport() {
 		extent.flush();
 		extent.close();

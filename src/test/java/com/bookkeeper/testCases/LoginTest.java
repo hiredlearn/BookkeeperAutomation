@@ -1,5 +1,9 @@
 package com.bookkeeper.testCases;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
+
 import java.lang.reflect.Method;
 
 import org.testng.annotations.BeforeClass;
@@ -18,7 +22,7 @@ public class LoginTest extends TestBase {
 	LoginPage loginPage;
 	RegisterPage registerPage;
 	DashboardPage dashboardPage;
-	
+
 	TestUtility testUtil;
 
 	@BeforeClass(alwaysRun = true)
@@ -27,16 +31,14 @@ public class LoginTest extends TestBase {
 		initialization();
 		log.info("Application Launched Successfully");
 		homepage = new Homepage();
-		Thread.sleep(5000);
+		homepage.navigateToLoginPage();
 	}
 
 	@Test(priority = 1, enabled = true)
-	public void verifyPerformLogin(Method method) {
+	public void verifyPageTitle(Method method) throws InterruptedException {
 		extentTest = extent.startTest(method.getName());
-		homepage.navigateToLoginPage();
-		
+		assertThat(driver.getTitle(), is(equalTo("Login - Akaunting")));
 	}
-
 
 	@DataProvider(name = "loginData")
 	public String[][] getDataFromDataprovider() {

@@ -9,7 +9,6 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
@@ -65,6 +64,15 @@ public class TestUtility extends TestBase {
 			}
 		}
 		return data;
+	}
+	
+	public void wait(int sec) {
+		try {
+			Thread.sleep(sec);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	// To Switch into a Frame using Name.
