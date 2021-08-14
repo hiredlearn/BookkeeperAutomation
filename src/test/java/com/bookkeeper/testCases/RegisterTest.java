@@ -64,8 +64,8 @@ public class RegisterTest extends TestBase {
 		registerPage.submitForm();
 		System.out.println(registerPage.getErrorMessage());
 
-//		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
-//				.anyMatch(msg -> msg.contains("Oh snap! The name field is required.")));
+		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
+				.anyMatch(msg -> msg.contains("Oh snap! The name field is required.")));
 		
 	}
 
@@ -80,8 +80,8 @@ public class RegisterTest extends TestBase {
 		registerPage.submitForm();
 		System.out.println(registerPage.getErrorMessage());
 
-//		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
-//				.anyMatch(msg -> msg.contains("Oh snap! The g-recaptcha-response field is required.")));
+		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
+				.anyMatch(msg -> msg.contains("Oh snap! The g-recaptcha-response field is required.")));
 		
 	}
 
@@ -95,8 +95,8 @@ public class RegisterTest extends TestBase {
 		registerPage.submitForm();
 		System.out.println(registerPage.getErrorMessage());
 
-//		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
-//				.anyMatch(msg -> msg.contains("Oh snap! The email field is required.")));
+		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
+				.anyMatch(msg -> msg.contains("Oh snap! The email field is required.")));
 		
 	}
 
@@ -110,8 +110,8 @@ public class RegisterTest extends TestBase {
 		registerPage.submitForm();
 		System.out.println(registerPage.getErrorMessage());
 
-//		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
-//				.anyMatch(msg -> msg.contains("Oh snap! The email field is required.")));
+		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
+				.anyMatch(msg -> msg.contains("Oh snap! The email field is required.")));
 		
 	}
 
@@ -126,8 +126,8 @@ public class RegisterTest extends TestBase {
 		registerPage.submitForm();
 		System.out.println(registerPage.getErrorMessage());
 
-//		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
-//				.anyMatch(msg -> msg.contains("Oh snap! The g-recaptcha-response field is required.")));
+		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
+				.anyMatch(msg -> msg.contains("Oh snap! The g-recaptcha-response field is required.")));
 		
 	}
 
@@ -141,8 +141,8 @@ public class RegisterTest extends TestBase {
 		registerPage.submitForm();
 		System.out.println(registerPage.getErrorMessage());
 
-//		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
-//				.anyMatch(msg -> msg.contains("Oh snap! The password must be at least 5 characters.")));
+		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
+				.anyMatch(msg -> msg.contains("Oh snap! The password must be at least 5 characters.")));
 		
 	}
 
@@ -156,8 +156,8 @@ public class RegisterTest extends TestBase {
 		registerPage.submitForm();
 		System.out.println(registerPage.getErrorMessage());
 
-//		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
-//				.anyMatch(msg -> msg.contains("Oh snap! The password field is required.")));
+		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
+				.anyMatch(msg -> msg.contains("Oh snap! The password field is required.")));
 
 		
 	}
@@ -173,8 +173,8 @@ public class RegisterTest extends TestBase {
 		registerPage.submitForm();
 		System.out.println(registerPage.getErrorMessage());
 
-//		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
-//				.anyMatch(msg -> msg.contains("Oh snap! The g-recaptcha-response field is required.")));
+		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
+				.anyMatch(msg -> msg.contains("Oh snap! The g-recaptcha-response field is required.")));
 		
 	}
 
@@ -189,8 +189,8 @@ public class RegisterTest extends TestBase {
 		registerPage.submitForm();
 		System.out.println(registerPage.getErrorMessage());
 
-//		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
-//				.anyMatch(msg -> msg.contains("Oh snap! The g-recaptcha-response field is required.")));
+		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
+				.anyMatch(msg -> msg.contains("Oh snap! The g-recaptcha-response field is required.")));
 
 		
 	}
@@ -206,8 +206,8 @@ public class RegisterTest extends TestBase {
 		registerPage.submitForm();
 		System.out.println(registerPage.getErrorMessage());
 
-//		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
-//				.anyMatch(msg -> msg.contains("Oh snap! The g-recaptcha-response field is required.")));
+		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
+				.anyMatch(msg -> msg.contains("Oh snap! The g-recaptcha-response field is required.")));
 		
 	}
 
@@ -221,8 +221,8 @@ public class RegisterTest extends TestBase {
 		registerPage.submitForm();
 		System.out.println(registerPage.getErrorMessage());
 
-//		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
-//				.anyMatch(msg -> msg.contains("Oh snap! The agreement field is required.")));
+		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
+				.anyMatch(msg -> msg.contains("Oh snap! The agreement field is required.")));
 		
 	}
 
@@ -237,8 +237,8 @@ public class RegisterTest extends TestBase {
 		registerPage.submitForm();
 		System.out.println(registerPage.getErrorMessage());
 
-//		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
-//				.anyMatch(msg -> msg.contains("Oh snap! The g-recaptcha-response field is required.")));
+		assertThat("Error msg was not proper", registerPage.getErrorMessage().stream()
+				.anyMatch(msg -> msg.contains("Oh snap! The g-recaptcha-response field is required.")));
 	}
 
 }
