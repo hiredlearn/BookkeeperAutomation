@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>TestNG:  Test2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Aug 14 23:49:15 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>105 seconds (105611 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bookkeeper.testCases.HomepageTest.verifyAllDropdownOptionsDisplayed()'><b>verifyAllDropdownOptionsDisplayed</b><br>Test class: com.bookkeeper.testCases.HomepageTest<br>Parameters: public void com.bookkeeper.testCases.HomepageTest.verifyAllDropdownOptionsDisplayed(java.lang.reflect.Method)</td>
+<td></td>
+<td>0</td>
+<td>com.bookkeeper.testCases.HomepageTest@1ca25c47</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.HomepageTest.verifyDropdownOptionsDisplayed()'><b>verifyDropdownOptionsDisplayed</b><br>Test class: com.bookkeeper.testCases.HomepageTest<br>Parameters: public void com.bookkeeper.testCases.HomepageTest.verifyDropdownOptionsDisplayed(java.lang.reflect.Method)</td>
+<td></td>
+<td>0</td>
+<td>com.bookkeeper.testCases.HomepageTest@1ca25c47</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankEmail()'><b>verifyErrorOnBlankEmail</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankEmail(java.lang.reflect.Method)</td>
+<td></td>
+<td>1</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankName()'><b>verifyErrorOnBlankName</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankName(java.lang.reflect.Method)</td>
+<td></td>
+<td>2</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankPassword()'><b>verifyErrorOnBlankPassword</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankPassword(java.lang.reflect.Method)</td>
+<td></td>
+<td>2</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankSpaceInEmail()'><b>verifyErrorOnBlankSpaceInEmail</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankSpaceInEmail(java.lang.reflect.Method)</td>
+<td></td>
+<td>2</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankSpaceInName()'><b>verifyErrorOnBlankSpaceInName</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankSpaceInName(java.lang.reflect.Method)</td>
+<td></td>
+<td>2</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyErrorOnLessThenFiveCharPwd()'><b>verifyErrorOnLessThenFiveCharPwd</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnLessThenFiveCharPwd(java.lang.reflect.Method)</td>
+<td></td>
+<td>0</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyErrorOnNumricPassword()'><b>verifyErrorOnNumricPassword</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnNumricPassword(java.lang.reflect.Method)</td>
+<td></td>
+<td>0</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyErrorOnOnlyAlphabeticCharPassword()'><b>verifyErrorOnOnlyAlphabeticCharPassword</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnOnlyAlphabeticCharPassword(java.lang.reflect.Method)</td>
+<td></td>
+<td>3</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyErrorOnOnlySplCharPassword()'><b>verifyErrorOnOnlySplCharPassword</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnOnlySplCharPassword(java.lang.reflect.Method)</td>
+<td></td>
+<td>2</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyErrorOnTestName()'><b>verifyErrorOnTestName</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnTestName(java.lang.reflect.Method)</td>
+<td></td>
+<td>2</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyErrorOnUnagreedTerms()'><b>verifyErrorOnUnagreedTerms</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnUnagreedTerms(java.lang.reflect.Method)</td>
+<td></td>
+<td>2</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyErrorOnlyNumricInName()'><b>verifyErrorOnlyNumricInName</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnlyNumricInName(java.lang.reflect.Method)</td>
+<td></td>
+<td>2</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.HomepageTest.verifyPageTitle()'><b>verifyPageTitle</b><br>Test class: com.bookkeeper.testCases.HomepageTest<br>Parameters: public void com.bookkeeper.testCases.HomepageTest.verifyPageTitle(java.lang.reflect.Method)</td>
+<td></td>
+<td>0</td>
+<td>com.bookkeeper.testCases.HomepageTest@1ca25c47</td></tr>
+<tr>
+<td title='com.bookkeeper.testCases.RegisterTest.verifyPageTitle()'><b>verifyPageTitle</b><br>Test class: com.bookkeeper.testCases.RegisterTest<br>Parameters: public void com.bookkeeper.testCases.RegisterTest.verifyPageTitle(java.lang.reflect.Method)</td>
+<td></td>
+<td>0</td>
+<td>com.bookkeeper.testCases.RegisterTest@32cb636e</td></tr>
+</table><p>
+</body>
+</html>
