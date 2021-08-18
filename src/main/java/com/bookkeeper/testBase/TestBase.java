@@ -29,6 +29,8 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestBase {
 
 	public static WebDriver driver;
@@ -83,7 +85,8 @@ public class TestBase {
 			prefs.put("profile.password_manager_enabled", false);
 			chromeOptions.setExperimentalOption("prefs", prefs);
 
-			System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
+//			System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(chromeOptions);
 		} else if (broswerName.equals("IE")) {
 			System.setProperty("webdriver.ie.driver", Constants.INTERNET_EXPLORER_DRIVER_PATH);
