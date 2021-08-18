@@ -28,7 +28,7 @@ public class HomepageTest extends TestBase {
 	@BeforeClass(alwaysRun = true)
 	public void setUp(){
 		testUtil = new TestUtility();
-		initialization();
+		initialization("admin");
 		log.info("Application Launched Successfully");
 		homepage = new Homepage();
 	}

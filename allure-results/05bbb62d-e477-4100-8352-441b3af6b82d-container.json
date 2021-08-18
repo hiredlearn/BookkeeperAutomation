@@ -1,0 +1,1 @@
+{"uuid":"05bbb62d-e477-4100-8352-441b3af6b82d","name":"com.bookkeeper.testCases.LoginTest","children":["318a9d3c-c2bd-4de2-a75d-ffa860ffa080"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1629307552546,"stop":1629307568688}],"afters":[],"links":[],"start":1629307504247,"stop":1629307679473}

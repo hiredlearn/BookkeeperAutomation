@@ -7,7 +7,6 @@ import static org.hamcrest.Matchers.is;
 import java.lang.reflect.Method;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.bookkeeper.pages.DashboardPage;
@@ -28,7 +27,7 @@ public class LoginTest extends TestBase {
 	@BeforeClass(alwaysRun = true)
 	public void setUp() throws InterruptedException {
 		testUtil = new TestUtility();
-		initialization();
+		initialization("admin");
 		log.info("Application Launched Successfully");
 		homepage = new Homepage();
 		homepage.navigateToLoginPage();
@@ -38,11 +37,6 @@ public class LoginTest extends TestBase {
 	public void verifyPageTitle(Method method) throws InterruptedException {
 		extentTest = extent.startTest(method.getName());
 		assertThat(driver.getTitle(), is(equalTo("Login - Akaunting")));
-	}
-
-	@DataProvider(name = "loginData")
-	public String[][] getDataFromDataprovider() {
-		return TestUtility.getTestData("Login");
 	}
 
 }

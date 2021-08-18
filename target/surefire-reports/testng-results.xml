@@ -1,95 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="17" passed="16">
+<testng-results skipped="0" failed="0" ignored="11" total="23" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="134469" started-at="2021-08-14T23:48:46 IST" finished-at="2021-08-14T23:51:01 IST">
+  <suite name="Tests" duration-ms="169804" started-at="2021-08-18T22:59:29 IST" finished-at="2021-08-18T23:02:19 IST">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="28824" started-at="2021-08-14T23:48:46 IST" finished-at="2021-08-14T23:49:15 IST">
-      <class name="com.bookkeeper.testCases.HomepageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.HomepageTest@1ca25c47]" name="setUp" is-config="true" duration-ms="13062" started-at="2021-08-14T23:48:47 IST" finished-at="2021-08-14T23:49:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.HomepageTest@1ca25c47]" name="verifyPageTitle" duration-ms="80" started-at="2021-08-14T23:49:00 IST" finished-at="2021-08-14T23:49:00 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.bookkeeper.testCases.HomepageTest.verifyPageTitle(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.HomepageTest@1ca25c47]" name="tearDown" is-config="true" duration-ms="5008" started-at="2021-08-14T23:49:00 IST" finished-at="2021-08-14T23:49:05 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=HomepageTest.verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.HomepageTest@1ca25c47] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.HomepageTest@1ca25c47]" name="verifyDropdownOptionsDisplayed" duration-ms="286" started-at="2021-08-14T23:49:05 IST" finished-at="2021-08-14T23:49:05 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.bookkeeper.testCases.HomepageTest.verifyDropdownOptionsDisplayed(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDropdownOptionsDisplayed -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.HomepageTest@1ca25c47]" name="tearDown" is-config="true" duration-ms="5008" started-at="2021-08-14T23:49:05 IST" finished-at="2021-08-14T23:49:10 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyDropdownOptionsDisplayed status=SUCCESS method=HomepageTest.verifyDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.HomepageTest@1ca25c47] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyAllDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.HomepageTest@1ca25c47]" name="verifyAllDropdownOptionsDisplayed" duration-ms="61" started-at="2021-08-14T23:49:10 IST" finished-at="2021-08-14T23:49:10 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.bookkeeper.testCases.HomepageTest.verifyAllDropdownOptionsDisplayed(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllDropdownOptionsDisplayed -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.HomepageTest@1ca25c47]" name="tearDown" is-config="true" duration-ms="5002" started-at="2021-08-14T23:49:10 IST" finished-at="2021-08-14T23:49:15 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAllDropdownOptionsDisplayed status=SUCCESS method=HomepageTest.verifyAllDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.HomepageTest@1ca25c47] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.bookkeeper.testCases.HomepageTest -->
-    </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="105611" started-at="2021-08-14T23:49:15 IST" finished-at="2021-08-14T23:51:01 IST">
+    <test name="Test1" duration-ms="169804" started-at="2021-08-18T22:59:29 IST" finished-at="2021-08-18T23:02:19 IST">
       <class name="com.bookkeeper.testCases.RegisterTest">
-        <test-method status="PASS" signature="setLog4j()[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="setLog4j" is-config="true" duration-ms="325" started-at="2021-08-14T23:48:46 IST" finished-at="2021-08-14T23:48:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setLog4j -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="setUp" is-config="true" duration-ms="14867" started-at="2021-08-14T23:49:15 IST" finished-at="2021-08-14T23:49:30 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.RegisterTest@5f3b9c57]" name="setUp" is-config="true" duration-ms="14329" started-at="2021-08-18T22:59:58 IST" finished-at="2021-08-18T23:00:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyPageTitle" duration-ms="29" started-at="2021-08-14T23:49:30 IST" finished-at="2021-08-14T23:49:30 IST">
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.RegisterTest@5f3b9c57]" name="verifyPageTitle" duration-ms="42" started-at="2021-08-18T23:00:13 IST" finished-at="2021-08-18T23:00:13 IST">
           <params>
             <param index="0">
               <value>
@@ -100,286 +22,298 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5015" started-at="2021-08-14T23:49:30 IST" finished-at="2021-08-14T23:49:35 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@5f3b9c57]" name="tearDown" is-config="true" duration-ms="5014" started-at="2021-08-18T23:00:13 IST" finished-at="2021-08-18T23:00:18 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=RegisterTest.verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=RegisterTest.verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.RegisterTest@5f3b9c57] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyErrorOnBlankName(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyErrorOnBlankName" duration-ms="2838" started-at="2021-08-14T23:49:35 IST" finished-at="2021-08-14T23:49:38 IST">
+      </class> <!-- com.bookkeeper.testCases.RegisterTest -->
+      <class name="com.bookkeeper.testCases.BookkeeperDashboardTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81]" name="setUp" is-config="true" duration-ms="11653" started-at="2021-08-18T23:00:37 IST" finished-at="2021-08-18T23:00:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyAvailableRoles(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81]" name="verifyAvailableRoles" duration-ms="22771" started-at="2021-08-18T23:00:49 IST" finished-at="2021-08-18T23:01:12 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankName(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.bookkeeper.testCases.BookkeeperDashboardTest.verifyAvailableRoles(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyErrorOnBlankName -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5009" started-at="2021-08-14T23:49:38 IST" finished-at="2021-08-14T23:49:43 IST">
+        </test-method> <!-- verifyAvailableRoles -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81]" name="tearDown" is-config="true" duration-ms="5003" started-at="2021-08-18T23:01:12 IST" finished-at="2021-08-18T23:01:17 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyErrorOnBlankName status=SUCCESS method=RegisterTest.verifyErrorOnBlankName(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyErrorOnBlankSpaceInName(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyErrorOnBlankSpaceInName" duration-ms="2190" started-at="2021-08-14T23:49:43 IST" finished-at="2021-08-14T23:49:45 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankSpaceInName(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorOnBlankSpaceInName -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5011" started-at="2021-08-14T23:49:45 IST" finished-at="2021-08-14T23:49:51 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorOnBlankSpaceInName status=SUCCESS method=RegisterTest.verifyErrorOnBlankSpaceInName(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAvailableRoles status=SUCCESS method=BookkeeperDashboardTest.verifyAvailableRoles(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyErrorOnlyNumricInName(java.lang.reflect.Method)[pri:4, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyErrorOnlyNumricInName" duration-ms="2248" started-at="2021-08-14T23:49:51 IST" finished-at="2021-08-14T23:49:53 IST">
+        <test-method status="PASS" signature="verifyLogOut(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81]" name="verifyLogOut" duration-ms="331" started-at="2021-08-18T23:01:17 IST" finished-at="2021-08-18T23:01:17 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnlyNumricInName(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.bookkeeper.testCases.BookkeeperDashboardTest.verifyLogOut(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyErrorOnlyNumricInName -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5004" started-at="2021-08-14T23:49:53 IST" finished-at="2021-08-14T23:49:58 IST">
+        </test-method> <!-- verifyLogOut -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81]" name="tearDown" is-config="true" duration-ms="5013" started-at="2021-08-18T23:01:17 IST" finished-at="2021-08-18T23:01:22 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyErrorOnlyNumricInName status=SUCCESS method=RegisterTest.verifyErrorOnlyNumricInName(java.lang.reflect.Method)[pri:4, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyErrorOnBlankEmail(java.lang.reflect.Method)[pri:5, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyErrorOnBlankEmail" duration-ms="1978" started-at="2021-08-14T23:49:58 IST" finished-at="2021-08-14T23:50:00 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankEmail(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorOnBlankEmail -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5012" started-at="2021-08-14T23:50:00 IST" finished-at="2021-08-14T23:50:05 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorOnBlankEmail status=SUCCESS method=RegisterTest.verifyErrorOnBlankEmail(java.lang.reflect.Method)[pri:5, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLogOut status=SUCCESS method=BookkeeperDashboardTest.verifyLogOut(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyErrorOnBlankSpaceInEmail(java.lang.reflect.Method)[pri:6, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyErrorOnBlankSpaceInEmail" duration-ms="2156" started-at="2021-08-14T23:50:05 IST" finished-at="2021-08-14T23:50:07 IST">
+      </class> <!-- com.bookkeeper.testCases.BookkeeperDashboardTest -->
+      <class name="com.bookkeeper.testCases.ManagerDashboardTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125]" name="setUp" is-config="true" duration-ms="12600" started-at="2021-08-18T23:01:53 IST" finished-at="2021-08-18T23:02:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySideNavOptions(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125]" name="verifySideNavOptions" duration-ms="2687" started-at="2021-08-18T23:02:06 IST" finished-at="2021-08-18T23:02:09 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankSpaceInEmail(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.bookkeeper.testCases.ManagerDashboardTest.verifySideNavOptions(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyErrorOnBlankSpaceInEmail -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5007" started-at="2021-08-14T23:50:07 IST" finished-at="2021-08-14T23:50:12 IST">
+        </test-method> <!-- verifySideNavOptions -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125]" name="tearDown" is-config="true" duration-ms="5006" started-at="2021-08-18T23:02:09 IST" finished-at="2021-08-18T23:02:14 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyErrorOnBlankSpaceInEmail status=SUCCESS method=RegisterTest.verifyErrorOnBlankSpaceInEmail(java.lang.reflect.Method)[pri:6, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyErrorOnLessThenFiveCharPwd(java.lang.reflect.Method)[pri:8, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyErrorOnLessThenFiveCharPwd" duration-ms="727" started-at="2021-08-14T23:50:12 IST" finished-at="2021-08-14T23:50:13 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnLessThenFiveCharPwd(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorOnLessThenFiveCharPwd -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5009" started-at="2021-08-14T23:50:13 IST" finished-at="2021-08-14T23:50:18 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorOnLessThenFiveCharPwd status=SUCCESS method=RegisterTest.verifyErrorOnLessThenFiveCharPwd(java.lang.reflect.Method)[pri:8, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
+                <![CDATA[[TestResult name=verifySideNavOptions status=SUCCESS method=ManagerDashboardTest.verifySideNavOptions(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyErrorOnBlankPassword(java.lang.reflect.Method)[pri:9, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyErrorOnBlankPassword" duration-ms="2018" started-at="2021-08-14T23:50:18 IST" finished-at="2021-08-14T23:50:20 IST">
+        <test-method status="PASS" signature="verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125]" name="verifyUserIsAbleToNavigateToInvoices" duration-ms="348" started-at="2021-08-18T23:02:14 IST" finished-at="2021-08-18T23:02:14 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnBlankPassword(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.bookkeeper.testCases.ManagerDashboardTest.verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyErrorOnBlankPassword -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5013" started-at="2021-08-14T23:50:20 IST" finished-at="2021-08-14T23:50:25 IST">
+        </test-method> <!-- verifyUserIsAbleToNavigateToInvoices -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125]" name="tearDown" is-config="true" duration-ms="5000" started-at="2021-08-18T23:02:14 IST" finished-at="2021-08-18T23:02:19 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyErrorOnBlankPassword status=SUCCESS method=RegisterTest.verifyErrorOnBlankPassword(java.lang.reflect.Method)[pri:9, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyErrorOnNumricPassword(java.lang.reflect.Method)[pri:10, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyErrorOnNumricPassword" duration-ms="774" started-at="2021-08-14T23:50:25 IST" finished-at="2021-08-14T23:50:26 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnNumricPassword(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorOnNumricPassword -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5011" started-at="2021-08-14T23:50:26 IST" finished-at="2021-08-14T23:50:31 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorOnNumricPassword status=SUCCESS method=RegisterTest.verifyErrorOnNumricPassword(java.lang.reflect.Method)[pri:10, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserIsAbleToNavigateToInvoices status=SUCCESS method=ManagerDashboardTest.verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyErrorOnOnlyAlphabeticCharPassword(java.lang.reflect.Method)[pri:11, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyErrorOnOnlyAlphabeticCharPassword" duration-ms="3303" started-at="2021-08-14T23:50:31 IST" finished-at="2021-08-14T23:50:34 IST">
+      </class> <!-- com.bookkeeper.testCases.ManagerDashboardTest -->
+      <class name="com.bookkeeper.testCases.HomepageTest">
+        <test-method status="PASS" signature="setLog4j()[pri:0, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="setLog4j" is-config="true" duration-ms="276" started-at="2021-08-18T22:59:29 IST" finished-at="2021-08-18T22:59:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setLog4j -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="setUp" is-config="true" duration-ms="13613" started-at="2021-08-18T22:59:29 IST" finished-at="2021-08-18T22:59:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="verifyPageTitle" duration-ms="68" started-at="2021-08-18T22:59:43 IST" finished-at="2021-08-18T22:59:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnOnlyAlphabeticCharPassword(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.bookkeeper.testCases.HomepageTest.verifyPageTitle(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyErrorOnOnlyAlphabeticCharPassword -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5014" started-at="2021-08-14T23:50:34 IST" finished-at="2021-08-14T23:50:39 IST">
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="tearDown" is-config="true" duration-ms="5029" started-at="2021-08-18T22:59:43 IST" finished-at="2021-08-18T22:59:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyErrorOnOnlyAlphabeticCharPassword status=SUCCESS method=RegisterTest.verifyErrorOnOnlyAlphabeticCharPassword(java.lang.reflect.Method)[pri:11, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyErrorOnOnlySplCharPassword(java.lang.reflect.Method)[pri:12, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyErrorOnOnlySplCharPassword" duration-ms="2340" started-at="2021-08-14T23:50:39 IST" finished-at="2021-08-14T23:50:41 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnOnlySplCharPassword(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorOnOnlySplCharPassword -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5015" started-at="2021-08-14T23:50:41 IST" finished-at="2021-08-14T23:50:46 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorOnOnlySplCharPassword status=SUCCESS method=RegisterTest.verifyErrorOnOnlySplCharPassword(java.lang.reflect.Method)[pri:12, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=HomepageTest.verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.HomepageTest@33352f32] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyErrorOnUnagreedTerms(java.lang.reflect.Method)[pri:13, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyErrorOnUnagreedTerms" duration-ms="2255" started-at="2021-08-14T23:50:46 IST" finished-at="2021-08-14T23:50:49 IST">
+        <test-method status="PASS" signature="verifyDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="verifyDropdownOptionsDisplayed" duration-ms="306" started-at="2021-08-18T22:59:48 IST" finished-at="2021-08-18T22:59:48 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnUnagreedTerms(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.bookkeeper.testCases.HomepageTest.verifyDropdownOptionsDisplayed(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyErrorOnUnagreedTerms -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5004" started-at="2021-08-14T23:50:49 IST" finished-at="2021-08-14T23:50:54 IST">
+        </test-method> <!-- verifyDropdownOptionsDisplayed -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="tearDown" is-config="true" duration-ms="5015" started-at="2021-08-18T22:59:48 IST" finished-at="2021-08-18T22:59:53 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyErrorOnUnagreedTerms status=SUCCESS method=RegisterTest.verifyErrorOnUnagreedTerms(java.lang.reflect.Method)[pri:13, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyErrorOnTestName(java.lang.reflect.Method)[pri:14, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="verifyErrorOnTestName" duration-ms="2174" started-at="2021-08-14T23:50:54 IST" finished-at="2021-08-14T23:50:56 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.bookkeeper.testCases.RegisterTest.verifyErrorOnTestName(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorOnTestName -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="tearDown" is-config="true" duration-ms="5013" started-at="2021-08-14T23:50:56 IST" finished-at="2021-08-14T23:51:01 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorOnTestName status=SUCCESS method=RegisterTest.verifyErrorOnTestName(java.lang.reflect.Method)[pri:14, instance:com.bookkeeper.testCases.RegisterTest@32cb636e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyDropdownOptionsDisplayed status=SUCCESS method=HomepageTest.verifyDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.HomepageTest@33352f32] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.bookkeeper.testCases.RegisterTest@32cb636e]" name="endReport" is-config="true" duration-ms="1230" started-at="2021-08-14T23:51:01 IST" finished-at="2021-08-14T23:51:02 IST">
+        <test-method status="PASS" signature="verifyAllDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="verifyAllDropdownOptionsDisplayed" duration-ms="65" started-at="2021-08-18T22:59:53 IST" finished-at="2021-08-18T22:59:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.bookkeeper.testCases.HomepageTest.verifyAllDropdownOptionsDisplayed(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllDropdownOptionsDisplayed -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="tearDown" is-config="true" duration-ms="5004" started-at="2021-08-18T22:59:53 IST" finished-at="2021-08-18T22:59:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAllDropdownOptionsDisplayed status=SUCCESS method=HomepageTest.verifyAllDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.HomepageTest@33352f32] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="endReport" is-config="true" duration-ms="5366" started-at="2021-08-18T23:02:19 IST" finished-at="2021-08-18T23:02:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.bookkeeper.testCases.RegisterTest -->
-    </test> <!-- Test2 -->
+      </class> <!-- com.bookkeeper.testCases.HomepageTest -->
+      <class name="com.bookkeeper.testCases.CustomerDashboardTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="setUp" is-config="true" duration-ms="12218" started-at="2021-08-18T23:01:22 IST" finished-at="2021-08-18T23:01:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySideNavOptions(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="verifySideNavOptions" duration-ms="1809" started-at="2021-08-18T23:01:34 IST" finished-at="2021-08-18T23:01:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.bookkeeper.testCases.CustomerDashboardTest.verifySideNavOptions(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySideNavOptions -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="tearDown" is-config="true" duration-ms="5011" started-at="2021-08-18T23:01:36 IST" finished-at="2021-08-18T23:01:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySideNavOptions status=SUCCESS method=CustomerDashboardTest.verifySideNavOptions(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="verifyUserIsAbleToNavigateToInvoices" duration-ms="1276" started-at="2021-08-18T23:01:41 IST" finished-at="2021-08-18T23:01:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.bookkeeper.testCases.CustomerDashboardTest.verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToNavigateToInvoices -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="tearDown" is-config="true" duration-ms="5016" started-at="2021-08-18T23:01:42 IST" finished-at="2021-08-18T23:01:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToNavigateToInvoices status=SUCCESS method=CustomerDashboardTest.verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="verifyUserIsAbleToNavigateToPayments(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="verifyUserIsAbleToNavigateToPayments" duration-ms="980" started-at="2021-08-18T23:01:47 IST" finished-at="2021-08-18T23:01:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.bookkeeper.testCases.CustomerDashboardTest.verifyUserIsAbleToNavigateToPayments(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToNavigateToPayments -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="tearDown" is-config="true" duration-ms="5016" started-at="2021-08-18T23:01:48 IST" finished-at="2021-08-18T23:01:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToNavigateToPayments status=SUCCESS method=CustomerDashboardTest.verifyUserIsAbleToNavigateToPayments(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.bookkeeper.testCases.CustomerDashboardTest -->
+      <class name="com.bookkeeper.testCases.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.LoginTest@1e044120]" name="setUp" is-config="true" duration-ms="14182" started-at="2021-08-18T23:00:18 IST" finished-at="2021-08-18T23:00:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.LoginTest@1e044120]" name="verifyPageTitle" duration-ms="36" started-at="2021-08-18T23:00:32 IST" finished-at="2021-08-18T23:00:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.bookkeeper.testCases.LoginTest.verifyPageTitle(java.lang.reflect.Method) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.LoginTest@1e044120]" name="tearDown" is-config="true" duration-ms="5016" started-at="2021-08-18T23:00:32 IST" finished-at="2021-08-18T23:00:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=LoginTest.verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.LoginTest@1e044120] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.bookkeeper.testCases.LoginTest -->
+    </test> <!-- Test1 -->
   </suite> <!-- Tests -->
 </testng-results>

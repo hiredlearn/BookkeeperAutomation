@@ -16,10 +16,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.log4testng.Logger;
 
 import com.bookkeeper.constants.Constants;
@@ -39,6 +39,9 @@ public class TestBase {
 	public static ExtentTest extentTest;
 	public static WebEventListener eventListener;
 	public static Logger log;
+
+	public static String userId;
+	public static String pwd;
 
 	public TestBase() {
 		log = Logger.getLogger(this.getClass());
@@ -66,7 +69,7 @@ public class TestBase {
 
 	}
 
-	public static void initialization() {
+	public static void initialization(String bookkeeperRole) {
 		String broswerName = property.getProperty("Browser");
 		System.out.println(broswerName);
 
@@ -103,14 +106,14 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
-		driver.get(property.getProperty("Url"));
-	}
+		if (bookkeeperRole.equalsIgnoreCase("admin"))
+			driver.get(property.getProperty("Url"));
+		else
+			driver.get(property.getProperty("bookKeeperFlowUrl"));
 
-	@AfterSuite
-	public void endReport() {
-		extent.flush();
-		extent.close();
-		driver.quit();
+		userId = property.getProperty(bookkeeperRole + "Id");
+		pwd = property.getProperty(bookkeeperRole + "Pwd");
+
 	}
 
 	@AfterMethod(alwaysRun = true)
@@ -138,6 +141,19 @@ public class TestBase {
 
 		log.info("Browser Terminated");
 		log.info("-----------------------------------------------");
+	}
+
+	@AfterClass
+	public void tearDown() {
+		driver.close();
+		driver.quit();
+	}
+
+	@AfterSuite
+	public void endReport() {
+		extent.flush();
+		extent.close();
+
 	}
 
 }

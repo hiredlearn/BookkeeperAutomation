@@ -3,6 +3,7 @@ package com.bookkeeper.pages;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -25,6 +26,9 @@ public class Homepage extends TestBase {
 
 	@FindBy(linkText = "Register")
 	WebElement register;
+
+	@FindBy(linkText = "Dashboard")
+	WebElement dashboard;
 
 	@FindBy(xpath = "//div[@id='top-download']/a")
 	WebElement getStarted;
@@ -60,6 +64,18 @@ public class Homepage extends TestBase {
 		return new RegisterPage();
 	}
 
+	public DashboardPage navigateToDashboardPage(String CompanyName) {
+		clickOnProfileIcon();
+
+		new WebDriverWait(driver, Constants.EXPLICIT_WAIT).until(ExpectedConditions.visibilityOf(dashboard));
+		dashboard.click();
+
+		driver.findElements(
+				By.xpath("//a[contains(text(),'" + CompanyName + "')]/../following-sibling::td[2]/button[1]")).stream()
+				.findFirst().get().click();
+		return new DashboardPage();
+	}
+
 	public void getStarted() {
 		new WebDriverWait(driver, Constants.EXPLICIT_WAIT).until(ExpectedConditions.elementToBeClickable(getStarted));
 		getStarted.click();
@@ -76,7 +92,8 @@ public class Homepage extends TestBase {
 	}
 
 	public boolean verifyDropdownDisplayed() {
-		new WebDriverWait(driver, Constants.EXPLICIT_WAIT).until(ExpectedConditions.visibilityOf(profileDropdown.get(0)));
+		new WebDriverWait(driver, Constants.EXPLICIT_WAIT)
+				.until(ExpectedConditions.visibilityOf(profileDropdown.get(0)));
 		return profileDropdown.get(0).isDisplayed();
 	}
 

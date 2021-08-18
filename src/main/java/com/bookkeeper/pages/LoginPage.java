@@ -30,23 +30,25 @@ public class LoginPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void performLogin(String emailId, String pwd) {
+	public Homepage performLogin() {
 		new WebDriverWait(driver, Constants.EXPLICIT_WAIT).until(ExpectedConditions.visibilityOf(email));
-		email.sendKeys(emailId);
+		email.sendKeys(userId);
 		password.sendKeys(pwd);
+		System.out.println("Solve captcha manually in 1 min");
 		// for captcha
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(60000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		submitButton.click();
+		return new Homepage();
 	}
 
 	public List<String> getErrorMessage() {
 		return errorMsg.stream().map(msg -> msg.getText()).collect(Collectors.toList());
 	}
-	
+
 	public void submit() {
 		submitButton.click();
 	}
