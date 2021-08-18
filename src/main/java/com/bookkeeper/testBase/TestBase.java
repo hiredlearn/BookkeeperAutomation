@@ -89,10 +89,12 @@ public class TestBase {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(chromeOptions);
 		} else if (broswerName.equals("IE")) {
-			System.setProperty("webdriver.ie.driver", Constants.INTERNET_EXPLORER_DRIVER_PATH);
+//			System.setProperty("webdriver.ie.driver", Constants.INTERNET_EXPLORER_DRIVER_PATH);
+			WebDriverManager.edgedriver().setup();
 			driver = new InternetExplorerDriver();
 		} else if (broswerName.equals("Firefox")) {
-			System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_DRIVER_PATH);
+//			System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_DRIVER_PATH);
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else {
 			System.out.println("Path of Driver Executable is not Set for any Browser");
