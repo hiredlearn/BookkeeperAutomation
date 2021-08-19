@@ -6,7 +6,6 @@ import static org.hamcrest.Matchers.is;
 
 import java.lang.reflect.Method;
 
-import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="11" total="23" passed="12">
+<testng-results skipped="0" failed="0" ignored="10" total="22" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="169804" started-at="2021-08-18T22:59:29 IST" finished-at="2021-08-18T23:02:19 IST">
+  <suite name="Tests" duration-ms="199369" started-at="2021-08-19T23:18:24 IST" finished-at="2021-08-19T23:21:43 IST">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="169804" started-at="2021-08-18T22:59:29 IST" finished-at="2021-08-18T23:02:19 IST">
+    <test name="Test1" duration-ms="199369" started-at="2021-08-19T23:18:24 IST" finished-at="2021-08-19T23:21:43 IST">
       <class name="com.bookkeeper.testCases.RegisterTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.RegisterTest@5f3b9c57]" name="setUp" is-config="true" duration-ms="14329" started-at="2021-08-18T22:59:58 IST" finished-at="2021-08-18T23:00:13 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.RegisterTest@674c583e]" name="setUp" is-config="true" duration-ms="16640" started-at="2021-08-19T23:18:51 IST" finished-at="2021-08-19T23:19:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.RegisterTest@5f3b9c57]" name="verifyPageTitle" duration-ms="42" started-at="2021-08-18T23:00:13 IST" finished-at="2021-08-18T23:00:13 IST">
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.RegisterTest@674c583e]" name="verifyPageTitle" duration-ms="14" started-at="2021-08-19T23:19:07 IST" finished-at="2021-08-19T23:19:07 IST">
           <params>
             <param index="0">
               <value>
@@ -22,24 +22,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@5f3b9c57]" name="tearDown" is-config="true" duration-ms="5014" started-at="2021-08-18T23:00:13 IST" finished-at="2021-08-18T23:00:18 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.RegisterTest@674c583e]" name="tearDown" is-config="true" duration-ms="5005" started-at="2021-08-19T23:19:07 IST" finished-at="2021-08-19T23:19:12 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=RegisterTest.verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.RegisterTest@5f3b9c57] output={null}]]]>
+                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=RegisterTest.verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.RegisterTest@674c583e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bookkeeper.testCases.RegisterTest@674c583e]" name="tearDown" is-config="true" duration-ms="739" started-at="2021-08-19T23:19:12 IST" finished-at="2021-08-19T23:19:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.bookkeeper.testCases.RegisterTest -->
       <class name="com.bookkeeper.testCases.BookkeeperDashboardTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81]" name="setUp" is-config="true" duration-ms="11653" started-at="2021-08-18T23:00:37 IST" finished-at="2021-08-18T23:00:49 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@3f23a3a0]" name="setUp" is-config="true" duration-ms="11091" started-at="2021-08-19T23:19:36 IST" finished-at="2021-08-19T23:19:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyAvailableRoles(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81]" name="verifyAvailableRoles" duration-ms="22771" started-at="2021-08-18T23:00:49 IST" finished-at="2021-08-18T23:01:12 IST">
+        <test-method status="PASS" signature="verifyAvailableRoles(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@3f23a3a0]" name="verifyAvailableRoles" duration-ms="37957" started-at="2021-08-19T23:19:47 IST" finished-at="2021-08-19T23:20:25 IST">
           <params>
             <param index="0">
               <value>
@@ -50,18 +54,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAvailableRoles -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81]" name="tearDown" is-config="true" duration-ms="5003" started-at="2021-08-18T23:01:12 IST" finished-at="2021-08-18T23:01:17 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@3f23a3a0]" name="tearDown" is-config="true" duration-ms="5015" started-at="2021-08-19T23:20:25 IST" finished-at="2021-08-19T23:20:30 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAvailableRoles status=SUCCESS method=BookkeeperDashboardTest.verifyAvailableRoles(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAvailableRoles status=SUCCESS method=BookkeeperDashboardTest.verifyAvailableRoles(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@3f23a3a0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyLogOut(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81]" name="verifyLogOut" duration-ms="331" started-at="2021-08-18T23:01:17 IST" finished-at="2021-08-18T23:01:17 IST">
+        <test-method status="PASS" signature="verifyLogOut(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@3f23a3a0]" name="verifyLogOut" duration-ms="3426" started-at="2021-08-19T23:20:30 IST" finished-at="2021-08-19T23:20:33 IST">
           <params>
             <param index="0">
               <value>
@@ -72,24 +76,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogOut -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81]" name="tearDown" is-config="true" duration-ms="5013" started-at="2021-08-18T23:01:17 IST" finished-at="2021-08-18T23:01:22 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@3f23a3a0]" name="tearDown" is-config="true" duration-ms="5012" started-at="2021-08-19T23:20:33 IST" finished-at="2021-08-19T23:20:38 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLogOut status=SUCCESS method=BookkeeperDashboardTest.verifyLogOut(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@2cf23c81] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLogOut status=SUCCESS method=BookkeeperDashboardTest.verifyLogOut(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@3f23a3a0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bookkeeper.testCases.BookkeeperDashboardTest@3f23a3a0]" name="tearDown" is-config="true" duration-ms="738" started-at="2021-08-19T23:20:38 IST" finished-at="2021-08-19T23:20:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.bookkeeper.testCases.BookkeeperDashboardTest -->
       <class name="com.bookkeeper.testCases.ManagerDashboardTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125]" name="setUp" is-config="true" duration-ms="12600" started-at="2021-08-18T23:01:53 IST" finished-at="2021-08-18T23:02:06 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.ManagerDashboardTest@5fb97279]" name="setUp" is-config="true" duration-ms="6890" started-at="2021-08-19T23:21:16 IST" finished-at="2021-08-19T23:21:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySideNavOptions(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125]" name="verifySideNavOptions" duration-ms="2687" started-at="2021-08-18T23:02:06 IST" finished-at="2021-08-18T23:02:09 IST">
+        <test-method status="PASS" signature="verifySideNavOptions(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.ManagerDashboardTest@5fb97279]" name="verifySideNavOptions" duration-ms="6335" started-at="2021-08-19T23:21:23 IST" finished-at="2021-08-19T23:21:29 IST">
           <params>
             <param index="0">
               <value>
@@ -100,50 +108,54 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySideNavOptions -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125]" name="tearDown" is-config="true" duration-ms="5006" started-at="2021-08-18T23:02:09 IST" finished-at="2021-08-18T23:02:14 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.ManagerDashboardTest@5fb97279]" name="tearDown" is-config="true" duration-ms="5013" started-at="2021-08-19T23:21:29 IST" finished-at="2021-08-19T23:21:34 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySideNavOptions status=SUCCESS method=ManagerDashboardTest.verifySideNavOptions(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125] output={null}]]]>
+                <![CDATA[[TestResult name=verifySideNavOptions status=SUCCESS method=ManagerDashboardTest.verifySideNavOptions(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.ManagerDashboardTest@5fb97279] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125]" name="verifyUserIsAbleToNavigateToInvoices" duration-ms="348" started-at="2021-08-18T23:02:14 IST" finished-at="2021-08-18T23:02:14 IST">
+        <test-method status="PASS" signature="verifyUserIsAbleToPerformLogout(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.ManagerDashboardTest@5fb97279]" name="verifyUserIsAbleToPerformLogout" duration-ms="3392" started-at="2021-08-19T23:21:34 IST" finished-at="2021-08-19T23:21:38 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.bookkeeper.testCases.ManagerDashboardTest.verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.bookkeeper.testCases.ManagerDashboardTest.verifyUserIsAbleToPerformLogout(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToNavigateToInvoices -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125]" name="tearDown" is-config="true" duration-ms="5000" started-at="2021-08-18T23:02:14 IST" finished-at="2021-08-18T23:02:19 IST">
+        </test-method> <!-- verifyUserIsAbleToPerformLogout -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.ManagerDashboardTest@5fb97279]" name="tearDown" is-config="true" duration-ms="5006" started-at="2021-08-19T23:21:38 IST" finished-at="2021-08-19T23:21:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToNavigateToInvoices status=SUCCESS method=ManagerDashboardTest.verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.ManagerDashboardTest@35fe2125] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserIsAbleToPerformLogout status=SUCCESS method=ManagerDashboardTest.verifyUserIsAbleToPerformLogout(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.ManagerDashboardTest@5fb97279] output={null}]]]>
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bookkeeper.testCases.ManagerDashboardTest@5fb97279]" name="tearDown" is-config="true" duration-ms="702" started-at="2021-08-19T23:21:43 IST" finished-at="2021-08-19T23:21:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.bookkeeper.testCases.ManagerDashboardTest -->
       <class name="com.bookkeeper.testCases.HomepageTest">
-        <test-method status="PASS" signature="setLog4j()[pri:0, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="setLog4j" is-config="true" duration-ms="276" started-at="2021-08-18T22:59:29 IST" finished-at="2021-08-18T22:59:29 IST">
+        <test-method status="PASS" signature="setLog4j()[pri:0, instance:com.bookkeeper.testCases.HomepageTest@10c8f62]" name="setLog4j" is-config="true" duration-ms="301" started-at="2021-08-19T23:18:24 IST" finished-at="2021-08-19T23:18:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setLog4j -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="setUp" is-config="true" duration-ms="13613" started-at="2021-08-18T22:59:29 IST" finished-at="2021-08-18T22:59:43 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.HomepageTest@10c8f62]" name="setUp" is-config="true" duration-ms="10195" started-at="2021-08-19T23:18:24 IST" finished-at="2021-08-19T23:18:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="verifyPageTitle" duration-ms="68" started-at="2021-08-18T22:59:43 IST" finished-at="2021-08-18T22:59:43 IST">
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.HomepageTest@10c8f62]" name="verifyPageTitle" duration-ms="74" started-at="2021-08-19T23:18:34 IST" finished-at="2021-08-19T23:18:34 IST">
           <params>
             <param index="0">
               <value>
@@ -154,18 +166,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="tearDown" is-config="true" duration-ms="5029" started-at="2021-08-18T22:59:43 IST" finished-at="2021-08-18T22:59:48 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.HomepageTest@10c8f62]" name="tearDown" is-config="true" duration-ms="5010" started-at="2021-08-19T23:18:34 IST" finished-at="2021-08-19T23:18:40 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=HomepageTest.verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.HomepageTest@33352f32] output={null}]]]>
+                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=HomepageTest.verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.HomepageTest@10c8f62] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="verifyDropdownOptionsDisplayed" duration-ms="306" started-at="2021-08-18T22:59:48 IST" finished-at="2021-08-18T22:59:48 IST">
+        <test-method status="PASS" signature="verifyDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.HomepageTest@10c8f62]" name="verifyDropdownOptionsDisplayed" duration-ms="282" started-at="2021-08-19T23:18:40 IST" finished-at="2021-08-19T23:18:40 IST">
           <params>
             <param index="0">
               <value>
@@ -176,18 +188,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDropdownOptionsDisplayed -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="tearDown" is-config="true" duration-ms="5015" started-at="2021-08-18T22:59:48 IST" finished-at="2021-08-18T22:59:53 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.HomepageTest@10c8f62]" name="tearDown" is-config="true" duration-ms="5004" started-at="2021-08-19T23:18:40 IST" finished-at="2021-08-19T23:18:45 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyDropdownOptionsDisplayed status=SUCCESS method=HomepageTest.verifyDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.HomepageTest@33352f32] output={null}]]]>
+                <![CDATA[[TestResult name=verifyDropdownOptionsDisplayed status=SUCCESS method=HomepageTest.verifyDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.HomepageTest@10c8f62] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyAllDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="verifyAllDropdownOptionsDisplayed" duration-ms="65" started-at="2021-08-18T22:59:53 IST" finished-at="2021-08-18T22:59:53 IST">
+        <test-method status="PASS" signature="verifyAllDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.HomepageTest@10c8f62]" name="verifyAllDropdownOptionsDisplayed" duration-ms="63" started-at="2021-08-19T23:18:45 IST" finished-at="2021-08-19T23:18:45 IST">
           <params>
             <param index="0">
               <value>
@@ -198,28 +210,32 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllDropdownOptionsDisplayed -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="tearDown" is-config="true" duration-ms="5004" started-at="2021-08-18T22:59:53 IST" finished-at="2021-08-18T22:59:58 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.HomepageTest@10c8f62]" name="tearDown" is-config="true" duration-ms="5010" started-at="2021-08-19T23:18:45 IST" finished-at="2021-08-19T23:18:50 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAllDropdownOptionsDisplayed status=SUCCESS method=HomepageTest.verifyAllDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.HomepageTest@33352f32] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAllDropdownOptionsDisplayed status=SUCCESS method=HomepageTest.verifyAllDropdownOptionsDisplayed(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.HomepageTest@10c8f62] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.bookkeeper.testCases.HomepageTest@33352f32]" name="endReport" is-config="true" duration-ms="5366" started-at="2021-08-18T23:02:19 IST" finished-at="2021-08-18T23:02:24 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bookkeeper.testCases.HomepageTest@10c8f62]" name="tearDown" is-config="true" duration-ms="795" started-at="2021-08-19T23:18:50 IST" finished-at="2021-08-19T23:18:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.bookkeeper.testCases.HomepageTest@10c8f62]" name="endReport" is-config="true" duration-ms="466" started-at="2021-08-19T23:21:43 IST" finished-at="2021-08-19T23:21:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- com.bookkeeper.testCases.HomepageTest -->
       <class name="com.bookkeeper.testCases.CustomerDashboardTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="setUp" is-config="true" duration-ms="12218" started-at="2021-08-18T23:01:22 IST" finished-at="2021-08-18T23:01:34 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@5ab14cb9]" name="setUp" is-config="true" duration-ms="6005" started-at="2021-08-19T23:20:39 IST" finished-at="2021-08-19T23:20:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySideNavOptions(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="verifySideNavOptions" duration-ms="1809" started-at="2021-08-18T23:01:34 IST" finished-at="2021-08-18T23:01:36 IST">
+        <test-method status="PASS" signature="verifySideNavOptions(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.CustomerDashboardTest@5ab14cb9]" name="verifySideNavOptions" duration-ms="6012" started-at="2021-08-19T23:20:45 IST" finished-at="2021-08-19T23:20:51 IST">
           <params>
             <param index="0">
               <value>
@@ -230,18 +246,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySideNavOptions -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="tearDown" is-config="true" duration-ms="5011" started-at="2021-08-18T23:01:36 IST" finished-at="2021-08-18T23:01:41 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@5ab14cb9]" name="tearDown" is-config="true" duration-ms="5014" started-at="2021-08-19T23:20:51 IST" finished-at="2021-08-19T23:20:56 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySideNavOptions status=SUCCESS method=CustomerDashboardTest.verifySideNavOptions(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92] output={null}]]]>
+                <![CDATA[[TestResult name=verifySideNavOptions status=SUCCESS method=CustomerDashboardTest.verifySideNavOptions(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.CustomerDashboardTest@5ab14cb9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="verifyUserIsAbleToNavigateToInvoices" duration-ms="1276" started-at="2021-08-18T23:01:41 IST" finished-at="2021-08-18T23:01:42 IST">
+        <test-method status="PASS" signature="verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.CustomerDashboardTest@5ab14cb9]" name="verifyUserIsAbleToNavigateToInvoices" duration-ms="2847" started-at="2021-08-19T23:20:56 IST" finished-at="2021-08-19T23:20:59 IST">
           <params>
             <param index="0">
               <value>
@@ -252,18 +268,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToNavigateToInvoices -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="tearDown" is-config="true" duration-ms="5016" started-at="2021-08-18T23:01:42 IST" finished-at="2021-08-18T23:01:47 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@5ab14cb9]" name="tearDown" is-config="true" duration-ms="5002" started-at="2021-08-19T23:20:59 IST" finished-at="2021-08-19T23:21:04 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToNavigateToInvoices status=SUCCESS method=CustomerDashboardTest.verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserIsAbleToNavigateToInvoices status=SUCCESS method=CustomerDashboardTest.verifyUserIsAbleToNavigateToInvoices(java.lang.reflect.Method)[pri:2, instance:com.bookkeeper.testCases.CustomerDashboardTest@5ab14cb9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyUserIsAbleToNavigateToPayments(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="verifyUserIsAbleToNavigateToPayments" duration-ms="980" started-at="2021-08-18T23:01:47 IST" finished-at="2021-08-18T23:01:48 IST">
+        <test-method status="PASS" signature="verifyUserIsAbleToNavigateToPayments(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.CustomerDashboardTest@5ab14cb9]" name="verifyUserIsAbleToNavigateToPayments" duration-ms="6151" started-at="2021-08-19T23:21:04 IST" finished-at="2021-08-19T23:21:10 IST">
           <params>
             <param index="0">
               <value>
@@ -274,24 +290,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToNavigateToPayments -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92]" name="tearDown" is-config="true" duration-ms="5016" started-at="2021-08-18T23:01:48 IST" finished-at="2021-08-18T23:01:53 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@5ab14cb9]" name="tearDown" is-config="true" duration-ms="5013" started-at="2021-08-19T23:21:10 IST" finished-at="2021-08-19T23:21:15 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToNavigateToPayments status=SUCCESS method=CustomerDashboardTest.verifyUserIsAbleToNavigateToPayments(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.CustomerDashboardTest@3624da92] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserIsAbleToNavigateToPayments status=SUCCESS method=CustomerDashboardTest.verifyUserIsAbleToNavigateToPayments(java.lang.reflect.Method)[pri:3, instance:com.bookkeeper.testCases.CustomerDashboardTest@5ab14cb9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bookkeeper.testCases.CustomerDashboardTest@5ab14cb9]" name="tearDown" is-config="true" duration-ms="714" started-at="2021-08-19T23:21:15 IST" finished-at="2021-08-19T23:21:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.bookkeeper.testCases.CustomerDashboardTest -->
       <class name="com.bookkeeper.testCases.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.LoginTest@1e044120]" name="setUp" is-config="true" duration-ms="14182" started-at="2021-08-18T23:00:18 IST" finished-at="2021-08-18T23:00:32 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.bookkeeper.testCases.LoginTest@25f7391e]" name="setUp" is-config="true" duration-ms="17025" started-at="2021-08-19T23:19:13 IST" finished-at="2021-08-19T23:19:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.LoginTest@1e044120]" name="verifyPageTitle" duration-ms="36" started-at="2021-08-18T23:00:32 IST" finished-at="2021-08-18T23:00:32 IST">
+        <test-method status="PASS" signature="verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.LoginTest@25f7391e]" name="verifyPageTitle" duration-ms="10" started-at="2021-08-19T23:19:30 IST" finished-at="2021-08-19T23:19:30 IST">
           <params>
             <param index="0">
               <value>
@@ -302,14 +322,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.LoginTest@1e044120]" name="tearDown" is-config="true" duration-ms="5016" started-at="2021-08-18T23:00:32 IST" finished-at="2021-08-18T23:00:37 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.bookkeeper.testCases.LoginTest@25f7391e]" name="tearDown" is-config="true" duration-ms="5005" started-at="2021-08-19T23:19:30 IST" finished-at="2021-08-19T23:19:35 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=LoginTest.verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.LoginTest@1e044120] output={null}]]]>
+                <![CDATA[[TestResult name=verifyPageTitle status=SUCCESS method=LoginTest.verifyPageTitle(java.lang.reflect.Method)[pri:1, instance:com.bookkeeper.testCases.LoginTest@25f7391e] output={null}]]]>
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bookkeeper.testCases.LoginTest@25f7391e]" name="tearDown" is-config="true" duration-ms="779" started-at="2021-08-19T23:19:35 IST" finished-at="2021-08-19T23:19:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

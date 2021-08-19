@@ -44,11 +44,16 @@ public class ManagerDashboardTest extends TestBase {
 	}
 
 	@Test(priority = 2, enabled = true)
-	public void verifyUserIsAbleToNavigateToInvoices(Method method) {
+	public void verifyUserIsAbleToPerformLogout(Method method) {
 		extentTest = extent.startTest(method.getName());
 		dashboardPage.profileDropDown("Logout");
-		assertThat(driver.getTitle(), is(equalTo("Dashboard - Max It")));
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		assertThat(driver.getTitle(), is(equalTo("Login")));
 	}
 
-	
 }

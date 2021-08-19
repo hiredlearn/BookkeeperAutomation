@@ -12,8 +12,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -72,10 +72,11 @@ public class TestBase {
 	}
 
 	public static void initialization(String bookkeeperRole) {
-		String broswerName = property.getProperty("Browser");
-		System.out.println(broswerName);
+		String broswerName = property.getProperty("browser");
+//				System.getProperty("browser");
+		log.info("launching " + broswerName + " browser");
 
-		if (broswerName.equals("Chrome")) {
+		if (broswerName.equalsIgnoreCase("Chrome")) {
 			chromeOptions = new ChromeOptions();
 			chromeOptions.setExperimentalOption("useAutomationExtension", false);
 			chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
@@ -85,15 +86,12 @@ public class TestBase {
 			prefs.put("profile.password_manager_enabled", false);
 			chromeOptions.setExperimentalOption("prefs", prefs);
 
-//			System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(chromeOptions);
-		} else if (broswerName.equals("IE")) {
-//			System.setProperty("webdriver.ie.driver", Constants.INTERNET_EXPLORER_DRIVER_PATH);
+		} else if (broswerName.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
-			driver = new InternetExplorerDriver();
-		} else if (broswerName.equals("Firefox")) {
-//			System.setProperty("webdriver.gecko.driver", Constants.FIREFOX_DRIVER_PATH);
+			driver = new EdgeDriver();
+		} else if (broswerName.equalsIgnoreCase("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else {

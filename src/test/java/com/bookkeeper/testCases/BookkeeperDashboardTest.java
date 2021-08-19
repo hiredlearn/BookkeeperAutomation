@@ -32,13 +32,13 @@ public class BookkeeperDashboardTest extends TestBase {
 		dashboardPage = new DashboardPage();
 		dashboardPage.login();
 	}
-
-	@Test(priority = 1, enabled = false)
-	public void verifyUserIsAbleToLoginToDashboard(Method method) {
-		extentTest = extent.startTest(method.getName());
-		dashboardPage = homepage.navigateToDashboardPage("Max iT 2");
-		assertThat(driver.getTitle(), is(equalTo("Free Accounting Software - Akaunting")));
-	}
+//captcha is involved, hence commenting
+//	@Test(priority = 1, enabled = false)
+//	public void verifyUserIsAbleToLoginToDashboard(Method method) {
+//		extentTest = extent.startTest(method.getName());
+//		dashboardPage = homepage.navigateToDashboardPage("Max iT 2");
+//		assertThat(driver.getTitle(), is(equalTo("Free Accounting Software - Akaunting")));
+//	}
 
 	@Test(priority = 2, enabled = true)
 	public void verifyAvailableRoles(Method method) {
@@ -53,7 +53,14 @@ public class BookkeeperDashboardTest extends TestBase {
 		extentTest = extent.startTest(method.getName());
 		dashboardPage.profileDropDown("Logout");
 		
-		assertThat(driver.getTitle(), is(equalTo("Roles - Max It")));
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		assertThat(driver.getTitle(), is(equalTo("Login")));
 	}
 
 }
